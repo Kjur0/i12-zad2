@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Pobierz zależności -->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<!-- Wczytaj własne style i skrypty -->
+	<link rel="stylesheet" href="style.css">
+	<script>
+		$(() => {
+			if ($("#quiz").ownerDocument !== document)
+				$("#quiz").attr("action", "quiz/result.html")
+		})
+	</script>
+	<title>Mini Quiz</title>
+</head>
+
+<body>
+	<form name="quiz" method="get" target="_self" action="result.html" id="quiz">
+		<h1>Mini quiz</h1>
+		<div>
+			<h3>1. Berlin jest stolicą którego kraju?</h3>
+			<div>
+				<input type="radio" name="pyt1" id="pyt1a" value="a">
+				<label for="pyt1a">a: Niemiec</label>
+			</div>
+			<div>
+				<input type="radio" name="pyt1" id="pyt1b" value="b">
+				<label for="pyt1b">b: Polski</label>
+			</div>
+			<div>
+				<input type="radio" name="pyt1" id="pyt1c" value="c">
+				<label for="pyt1c">c: Francji</label>
+			</div>
+			<div>
+				<input type="radio" name="pyt1" id="pyt1d" value="d">
+				<label for="pyt1d">d: Włoch</label>
+			</div>
+		</div>
+		<div>
+			<h3>2. Ile linii metra znajduje się w Berlinie?</h3>
+			<input type="number" name="pyt2" id="pyt2" min="1" max="20" step="1">
+		</div>
+		<div>
+			<h3>3. Jak berlińczycy nazywają metro?</h3>
+			<input type="text" name="pyt3" id="pyt3">
+		</div>
+		<div>
+			<h3>4. Kiedy zburzono mur berliński?</h3>
+			<input type="month" name="pyt4" id="pyt4">
+		</div>
+		<hr style="width: 100%; border: none; border-top: #252422 2px solid">
+		<div class="butts">
+			<input type="reset" value="Resetuj" id="reset"><input type="submit" value="Sprawdź">
+		</div>
+	</form>
+</body>
+
+</html>

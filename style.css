@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+	display: block;
+	background-color: #CCC5B9;
+	color: #252422;
+	font-family: 'Pacifico', cursive;
+	font-size: 16px;
+	text-indent: 2.5em;
+	text-align: justify;
+	width: 80%;
+	position: relative;
+	left: 20%;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	padding: 0.4em;
+}
+
+@media (min-width: 1200px) {
+	body {
+		width: calc(100% - 15em);
+		left: 15em;
+	}
+}
+
+hr {
+	width: 100%;
+	border: none;
+	border-top: 0.2em #EB5E28 dashed;
+}
+
+h1,
+h3 {
+	margin: 0;
+	font-weight: 400;
+	text-align: center;
+	text-indent: 0;
+}
+
+h1 {
+	font-size: 4em;
+	color: #EB5E28;
+}
+
+h3 {
+	font-size: 2em;
+	color: #403D39;
+}
+
+.center {
+	display: block;
+	text-align: center;
+	text-indent: 0;
+}
+
+header {
+	background-color: #403D39;
+	color: #FFFCF2;
+	min-width: min-content;
+	width: 20%;
+	max-width: 15em;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+a.but {
+	font-size: 1.2em;
+	background-color: #252422;
+	height: 2em;
+	min-width: 75%;
+	max-width: 100%;
+	border-radius: 0;
+	color: #FFFCF2;
+	text-decoration: none;
+	text-align: center;
+	text-indent: 0;
+	padding: 0.25em 1em;
+}
+
+a.but:first-child {
+	border-radius: 0.75em 0.75em 0 0;
+}
+
+a.but:last-child {
+	border-radius: 0 0 0.75em 0.75em;
+}
+
+#gallery {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	align-content: stretch;
+	justify-content: stretch;
+	align-items: center;
+	justify-items: center;
+	gap: 1em 2em;
+}
+
+#gallery img {
+	max-width: 90%;
+	height: 100%;
+	object-fit: cover;
+	aspect-ratio: 16 / 9;
+}
+
+.mfp-title,
+.mfp-preloader {
+	text-indent: 0;
+}
+
+.mfp-title {
+	color: #EB5E28;
+	font-size: 1.5em;
+}
+
+.mpf-counter,
+.mpf-close,
+.mfp-preloader {
+	color: #CCC5B9;
+}
+
+#galleryWarn {
+	color: orangered;
+}
+
+iframe {
+	aspect-ratio: 16 / 9;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	border: none;
+}
+
+#mapFrame,
+#ytFrame {
+	width: 80%;
+	height: 50%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	overflow: hidden;
+	scroll-behavior: unset;
+	border: 2px solid #FFFCF2;
+	border-radius: 1em;
+}
+
+#quizLink {
+	margin-bottom: 2em;
+}
+
+table,
+table tr>* {
+	border-collapse: collapse;
+	border: 0.15em solid #403D39;
+}
+
+table {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}

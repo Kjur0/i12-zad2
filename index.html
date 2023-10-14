@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Berlin</title>
+	<!-- Pobierz zależności -->
+	<link rel="stylesheet" href="https://dimsemenov.com/plugins/magnific-popup/dist/magnific-popup.css">
+	<script src="https://dimsemenov.com/plugins/magnific-popup/third-party-libs/zepto.min.js"></script>
+	<script src="https://dimsemenov.com/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<!-- Wczytaj własne style i skrypty -->
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+
+
+<body>
+	<header>
+		<a href="#main" class="but">Opis</a>
+		<a href="#mapa" class="but">Mapa</a>
+		<a href="#galeria" class="but">Galeria</a>
+		<a href="#film" class="but">Filmik</a>
+		<a href="#linki" class="but">Czytaj więcej</a>
+		<a href="#quiz" class="but">Mini Quiz</a>
+	</header>
+	<h1 id="main">Berlin</h1>
+	<h3>Opis</h3>
+	<p>
+		Berlin – stolica, największe miasto Niemiec i zarazem kraj związkowy. Jest największym miastem w Unii
+		Europejskiej pod względem liczby mieszkańców.
+	</p>
+	<p>
+		Berlin jest podzielony na dwanaście okręgów administracyjnych (Bezirk). Przez przestrzeń miejską przepływają
+		m.in. rzeki Sprewa i Hawela, a ponadto znajduje się wiele jezior i zatok, w tym największe Müggelsee.
+	</p>
+	<p>
+		Pierwsza wzmianka o mieście pochodzi z 1237 r. Berlin pełnił rolę historycznej stolicy Brandenburgii, Królestwa
+		Prus, Związku Północnoniemieckiego, Cesarstwa Niemieckiego, Republiki Weimarskiej i III Rzeszy. Po 1945 r.
+		wschodnia część miasta była stolicą Niemieckiej Republiki Demokratycznej (Berlin, Hauptstadt der DDR), natomiast
+		pozostała tworzyła Berlin Zachodni – otoczoną murem (okres 1961–1989) enklawę na terenie NRD. Po zjednoczeniu
+		Niemiec 1990 roku Berlin został stolicą całych Niemiec. Berlin jest siedzibą Prezydenta RFN (od 1994 r.),
+		Kanclerza RFN (od 2001 r.), Bundestagu (od 1999 r.) i Bundesratu (od 2000 r.).
+	</p>
+	<p>
+		Berlin jest jedną z ważniejszych w Europie metropolii globalnych, ponadto ważnym węzłem komunikacyjnym Niemiec i
+		Europy, zarówno kolejowym, lotniczym i drogowym. Ważny ośrodek naukowy, kulturalny i artystyczny (m.in.
+		Europejska Akademia Filmowa i Museumsinsel).
+	</p>
+	<table>
+		<caption class="center">Informacje o Berlinie</caption>
+		<tr>
+			<th>Powierzchnia</th>
+			<td>892 km²</td>
+		</tr>
+		<tr>
+			<th>Populacja</th>
+			<td>3 821 881</td>
+		</tr>
+		<tr>
+			<th>Burmistrz</th>
+			<td>Kai Wegner</td>
+		</tr>
+	</table>
+
+	<hr>
+	<h3 id="mapa">Mapa</h3>
+	<iframe id="mapFrame" name="mapFrame" title="Mapa Berlina"
+			src="https://maps.google.com/maps?hl=pl&amp;q=Berlin,%20Germany+(Berlin)&amp;t=&amp;z=9&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+	</iframe>
+
+	<hr>
+	<h3 id="galeria">Galeria</h3>
+	<span id="galleryWarn" class="center">Uwaga! Galeria dynamiczna może nie działać na wąskich ekranach!</span>
+	<div id="gallery">
+		<img src="src/img1.jpg" alt="Berliner Fernseher" data-mfp-src="src/img1.jpg" title="Berliner Fernseher">
+		<img src="src/img2.jpg" alt="Brandenburger Tor" data-mfp-src="src/img2.jpg" title="Brandenburger Tor">
+		<img src="src/img3.jpg" alt="Reichstag" data-mfp-src="src/img3.jpg" title="Reichstag">
+		<img src="src/img4.jpg" alt="Berlin Hauptbahnhof" data-mfp-src="src/img4.jpg" title="Berlin Hauptbahnhof">
+	</div>
+
+	<hr>
+	<h3 id="film">Filmik</h3>
+	<a href="https://www.youtube.com/watch?v=6aTZH1R2hpk" target="_blank" class="center">Otwórz filmik w nowej
+		karcie</a>
+	<iframe id="ytFrame" src="https://www.youtube.com/embed/6aTZH1R2hpk?si=ycKSKdjiDYSLXbmi"
+			title="YouTube video player"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowfullscreen></iframe>
+
+	<hr>
+	<h3 id="linki">Czytaj więcej</h3>
+	<p>
+		Zachęcam do spradzenia ponizszych linków, które zawierają więcej informacji na temat Berlina:
+	</p>
+	<ul>
+		<li><a href="https://www.podrozepoeuropie.pl/berlin-zwiedzanie/" target="_blank">Podróże po Europie</a></li>
+		<li><a href="https://www.getyourguide.pl/-l17/" target="_blank">Get your guide</a></li>
+		<li><a href="http://berlin.lovetotravel.pl/" target="_blank">Love to travel</a></li>
+		<li><a href="https://www.visitberlin.de/en" target="_blank">Visit Berlin</a></li>
+	</ul>
+
+	<hr>
+	<h3 id="quiz">Mini Quiz</h3>
+	<a class="center" href="quiz" target="_blank" id="quizLink">Otwórz quiz</a>
+</body>
+
+</html>

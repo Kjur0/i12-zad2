@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+	display: block;
+	background-color: #CCC5B9;
+	color: #252422;
+	font-family: 'Pacifico', cursive;
+	font-size: 12px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+
+	/*color: #FFFCF2, #CCC5B9, #403D39, #252422, #EB5E28*/
+}
+
+hr {
+	width: 100%;
+	border: none;
+	border-top: #252422 2px solid
+}
+
+h1,
+h3 {
+	margin: 0;
+	font-weight: 400;
+	text-align: center;
+}
+
+h1 {
+	font-size: 4em;
+	color: #EB5E28;
+}
+
+h3 {
+	font-size: 2em;
+	color: #403D39;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+input:not([type="radio"]) {
+	padding: 0;
+	width: 160px;
+	height: 20px;
+	background-color: #CCC5B9;
+	border: none;
+	border-bottom: #252422 2px solid;
+	text-align: center;
+}
+
+input:focus {
+	outline: none;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	appearance: none;
+}
+
+.butts input {
+	width: 80px;
+	height: 20px;
+	margin: 0;
+	border: none;
+	background-color: #EB5E28;
+	color: #FFFCF2;
+}
+
+.butts input:first-child {
+	border-radius: 5px 0 0 5px;
+}
+
+.butts input:last-child {
+	border-radius: 0 5px 5px 0;
+}
+
+
+input[type="radio"] {
+	appearance: none;
+	border: #252422 2px solid;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+}
+
+input[type="radio"]:checked {
+	background-color: #252422;
+	border: #EB5E28 2px solid;
+}
+
+.correct,
+.wrong {
+	font-size: 1.5em;
+}
+
+.correct {
+	color: darkgreen;
+}
+
+.wrong {
+	color: darkred;
+}
+
+.pnts {
+	font-size: 1.5em;
+	color: #403D39;
+}
