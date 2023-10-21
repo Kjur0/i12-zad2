@@ -1,4 +1,21 @@
+var musicPlaying = false
 $(() => {
+	// Music control
+	const music = document.getElementById("music")
+	$("#musicControl").text("▶️")
+	$("#musicControl").click((e) => {
+		e.preventDefault()
+		if (musicPlaying) {
+			music.pause()
+			musicPlaying = false
+			$("#musicControl").text("▶️")
+		} else {
+			music.play()
+			musicPlaying = true
+			$("#musicControl").text("⏸️")
+		}
+	})
+
 	// Dynamic gallery
 	$("#galleryWarn").hide()
 	try {

@@ -72,7 +72,8 @@ header {
 	justify-items: center;
 }
 
-a.but {
+.but {
+	display: block;
 	font-size: 1.2em;
 	background-color: #252422;
 	height: 2em;
@@ -84,13 +85,16 @@ a.but {
 	text-align: center;
 	text-indent: 0;
 	padding: 0.25em 1em;
+	border: none;
+	box-sizing: content-box;
+	cursor: pointer;
 }
 
-a.but:first-child {
+.but:first-child {
 	border-radius: 0.75em 0.75em 0 0;
 }
 
-a.but:last-child {
+.but:last-child {
 	border-radius: 0 0 0.75em 0.75em;
 }
 
@@ -142,9 +146,9 @@ iframe {
 }
 
 #mapFrame,
-#ytFrame {
+#ytEmbed {
 	width: 80%;
-	height: 50%;
+	aspect-ratio: 16 / 9;
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
