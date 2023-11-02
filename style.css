@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 body {
 	display: block;
-	background-color: #CCC5B9;
-	color: #252422;
-	font-family: 'Pacifico', cursive;
+	font-family: "Pacifico", cursive;
 	font-size: 16px;
 	text-indent: 2.5em;
 	text-align: justify;
@@ -29,7 +27,7 @@ p {
 hr {
 	width: 100%;
 	border: none;
-	border-top: 0.2em #EB5E28 dashed;
+	border-top: 0.2em #eb5e28 dashed;
 }
 
 h1,
@@ -42,12 +40,11 @@ h3 {
 
 h1 {
 	font-size: 4em;
-	color: #EB5E28;
+	color: #eb5e28;
 }
 
 h3 {
 	font-size: 2em;
-	color: #403D39;
 }
 
 .center {
@@ -57,8 +54,6 @@ h3 {
 }
 
 header {
-	background-color: #403D39;
-	color: #FFFCF2;
 	min-width: min-content;
 	width: 20%;
 	max-width: 15em;
@@ -75,12 +70,10 @@ header {
 .but {
 	display: block;
 	font-size: 1.2em;
-	background-color: #252422;
 	height: 2em;
 	min-width: 75%;
 	max-width: 100%;
 	border-radius: 0;
-	color: #FFFCF2;
 	text-decoration: none;
 	text-align: center;
 	text-indent: 0;
@@ -122,15 +115,11 @@ header {
 }
 
 .mfp-title {
-	color: #EB5E28;
+	color: #eb5e28;
 	font-size: 1.5em;
 }
 
-.mpf-counter,
-.mpf-close,
-.mfp-preloader {
-	color: #CCC5B9;
-}
+
 
 #galleryWarn {
 	color: orangered;
@@ -154,7 +143,6 @@ iframe {
 	transform: translateX(-50%);
 	overflow: hidden;
 	scroll-behavior: unset;
-	border: 2px solid #FFFCF2;
 	border-radius: 1em;
 }
 
@@ -162,14 +150,100 @@ iframe {
 	margin-bottom: 2em;
 }
 
-table,
-table tr>* {
-	border-collapse: collapse;
-	border: 0.15em solid #403D39;
-}
-
 table {
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: #fffcf2;
+		color: #252422;
+	}
+
+	h3 {
+		color: #403d39;
+	}
+
+	header {
+		background-color: #403d39;
+		color: #fffcf2;
+	}
+
+	.but {
+		background-color: #252422;
+		color: #fffcf2;
+	}
+
+	#mapFrame,
+	#ytFrame {
+		border: 2px solid #fffcf2;
+	}
+
+	table,
+	table tr>* {
+		border-collapse: collapse;
+		border: 0.15em solid #403d39;
+	}
+
+	a {
+		color: blue;
+	}
+
+	a:visited {
+		color: darkviolet;
+	}
+
+	.mpf-counter,
+	.mpf-close,
+	.mfp-preloader {
+		color: #ccc5b9;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #252422;
+		color: #fffcf2;
+	}
+
+	h3 {
+		color: #ccc5b9;
+	}
+
+	header {
+		background-color: #fffcf2;
+		color: #403d39;
+	}
+
+	.but {
+		background-color: #ccc5b9;
+		color: #252422;
+	}
+
+	#mapFrame,
+	#ytFrame {
+		border: 2px solid #252422;
+	}
+
+	table,
+	table tr>* {
+		border-collapse: collapse;
+		border: 0.15em solid #ccc5b9;
+	}
+
+	a {
+		color: lightblue;
+	}
+
+	a:visited {
+		color: violet;
+	}
+
+	.mpf-counter,
+	.mpf-close,
+	.mfp-preloader {
+		color: #403d39;
+	}
 }
